@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz app</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="md:h-[100vh] h-[100%] flex justify-center items-center">
+    <main class="md:h-[100vh] h-[100%] md:w-[80%] w-[100%]  bg-sky-800 flex md:flex-row justify-between flex-col border-2 border-black px-[50px] py-[10px]">
+        <div class="flex flex-row justify-center items-center h-[10vh] md:w-[50%] w-[100%] ">
+
+            <h1 class="flex justify-center  flex-row items-center text-center font-medium text-[blue] bg-white  md:text-[20px] text-[15px] md:w-[50%] md:h-[8vh] w-[50%] h-[8vh]">QUIZZ APP</h1>
+        </div>
+        <section class="grid grid-cols-2  justify-center md:w-[80%] w-[100%] gap-[40px] items-center h-[90vh] px-[40px] py-[40px] text-center  text-sm ">
+            <button   onclick="add(0,this)" class="md:w-[10vw] w-[30vw] text-center"></button>
+            <button onclick="add(1,this)" class="md:w-[10vw] w-[30vw] text-center"></button>
+            <button onclick="add(2,this)" class="md:w-[10vw] w-[30vw] text-center"></button>
+            <button onclick="add(3,this)" class="md:w-[10vw] w-[30vw] text-center"></button>
+        </section>
+        <section class="md:h-[80vh] h-[100%] flex flex-col justify-center items-center gap-[40px] border-2 border-white md:w-[80%] w-[100%] shadow shadow-black rounded-md">
+            <div class="border-2 border-white h-[24vh]  md:w-[50%] w-[50%] rounded-xl text-center " id="qustiondisplay"></div>
+            <div class="border-2 border-white h-[12vh]  md:w-[20%] w-[20%] rounded-xl text-center md:py-5" id="Score"></div>
+        </section>
+        <div class="h-[10vh] w-[30%] flex flex-col justify-center items-center ">
+            <audio class="w-[10%] h-[5vh]" src="/audio/mixkit-martial-arts-fast-punch-2047.wav" controls autoplay hidden  oncanplaythrough="handleplay()"></audio>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
